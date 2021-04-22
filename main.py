@@ -29,3 +29,9 @@ for p_list in price_list:
 most_close_price=price_list[close_current_price.index(min(close_current_price))]
 print("Most close price: {}\nCurrent price: {}".format(most_close_price,current_price))
 print(data[str(most_close_price)])
+
+
+instrument_id=data[choose_price[buy]["id"]]
+profit=data[choose_price][buy]["profit"]
+print("Choose you want to buy")
+print("price:",choose_price,"side:call","instrument_id:",instrument_id,"profit:",profit)
