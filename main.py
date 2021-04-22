@@ -2,7 +2,7 @@ from iqoptionapi.stable_api import IQ_Option
 import time
 from datetime import datetime
 
-api=IQ_Option("davidkinyanjui052@gmail.com","Letmein20116199623.")
+api=IQ_Option("email","password")
 api.connect()
 print(api)
 goal="EURUSD"
@@ -52,4 +52,4 @@ if buy_check:
             break
     api.unsubscribe_strike_list(buy)
 else:
-    print("Fail to buy, Please run again, digit i
+    print("Fail to buy, Please run again, digit i")
