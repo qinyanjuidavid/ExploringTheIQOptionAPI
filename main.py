@@ -1,16 +1,10 @@
-# This is a sample Python script.
+from iqoptionapi.stable_api import IQ_Option
+import time
+from datetime import datetime
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+api=IQ_Option("davidkinyanjui052@gmail.com","Letmein20116199623.")
+api.connect()
+print(api)
+goal="EURUSD"
+size=1
+maxdict=1
