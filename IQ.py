@@ -36,3 +36,4 @@ while True:
         check,order_id=api.buy_order("forex","USDCAD","buy",100,1,"market")
         print("Buying")
         print(api.get_async_order(order_id))
+#Still Finding a way to trade the stocks, The current code only works in the binary option"
